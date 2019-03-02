@@ -1,9 +1,12 @@
+package Monsters;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 
 
 public class Driver {
+
     public static void main(String[] args){
         HashMap<String,Integer> items =new HashMap<>();
         items.put("gold",5);
@@ -14,5 +17,9 @@ public class Driver {
         for (Monster m : monsters){
             System.out.println(m);
         }
+
+        System.out.println(monsters.get(0).attackTarget(monsters.get(1)));
+        System.out.println(monsters.get(1).attackTarget(monsters.get(0)));
+
     }
 }

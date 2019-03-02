@@ -1,3 +1,6 @@
+package Monsters;
+
+
 import java.util.HashMap;
 
 public class Kobold extends Monster {
@@ -9,7 +12,7 @@ public class Kobold extends Monster {
     @Override
 
     public String toString(){
-        return "Kobold has : " + super.toString();
+        return "Monsters.Kobold has : " + super.toString();
     }
 }
 
